@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+@font_color: rgb(126, 126, 126);
 
 body input {
     -webkit-appearance: none;
@@ -23,13 +24,15 @@ ul {
 }
 
 body {
-
+    height: 100%;
+    color: @font_color;
+    background-color: rgb(246, 247, 249);
     font-size: 14px;
     width: 100%;
     min-width: 320px;
     max-width: 640px;
     margin: 10px auto;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
 .top-container {
@@ -42,7 +45,8 @@ body {
     justify-content: space-between;
 
     span {
-        background-color: blueviolet;
+        background-color: transparent;
+        //背景图
         text-align: center;
         line-height: 45px;
 
@@ -73,48 +77,77 @@ body {
         margin: 0 auto;
         width: 80%;
         height: 100%;
+        border-radius: 10px 10px 0 0;
     }
 }
 
 .main {
     width: 100%;
+    background-color: white;
 
     .list-item {
         width: 80%;
         margin: 0 auto;
 
         ul {
-            margin-top: 20px;
+            margin: 10px 0;
             text-align: center;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            border: 1px solid black;
+            // border: 1px solid black;
+
 
 
             li {
                 margin: 10px 10px;
                 width: 25%;
-                border: 1px solid green;
+                // border: 1px solid green;
 
 
                 a {
                     width: 100%;
                     display: block;
                     text-decoration: none;
-                    color: black;
-                    border: 1px solid blue;
+                    color: @font_color;
+
+                    // border: 1px solid blue;
 
 
                     img {
                         width: 100%;
-                        border: 1px solid darkgoldenrod;
+                        // border: 1px solid darkgoldenrod;
                     }
-
-
                 }
             }
         }
     }
+}
 
+.message {
+    width: 100%;
+
+    div {
+        margin: 10px 0;
+        text-align: center;
+        background-color: white;
+        height: 65px;
+    }
+}
+
+footer {
+    display: flex;
+    background-color: white;
+
+    div:nth-child(1) {
+        border-right: 1px solid rgb(155, 155, 155);
+    }
+
+
+    div {
+        width: 50%;
+        height: 3.125rem;
+        text-align: center;
+        line-height: 3.75rem;
+    }
 }
