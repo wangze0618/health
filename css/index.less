@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body input {
+    -webkit-appearance: none;
+}
+
+body a,
+body img {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    vertical-align: middle;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+
+    font-size: 14px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 10px auto;
+    border: 1px solid red;
+}
+
+.top-container {
+    background-color: rgb(97, 171, 216);
+}
+
+.nav {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        background-color: blueviolet;
+        text-align: center;
+        line-height: 45px;
+
+        &:nth-child(1) {
+            width: 10%;
+            border: 1px solid red;
+        }
+
+        &:nth-child(2) {
+            width: 80%;
+            border: 1px solid greenyellow;
+        }
+
+        &:nth-child(3) {
+            width: 10%;
+            border: 1px solid red;
+        }
+    }
+}
+
+.banner {
+    height: 200px;
+    width: 100%;
+    padding-top: 20px;
+
+    .img {
+        background-color: gray;
+        margin: 0 auto;
+        width: 80%;
+        height: 100%;
+    }
+}
+
+.main {
+    width: 100%;
+
+    .list-item {
+        width: 80%;
+        margin: 0 auto;
+
+        ul {
+            margin-top: 20px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border: 1px solid black;
+
+
+            li {
+                margin: 10px 10px;
+                width: 25%;
+                border: 1px solid green;
+
+
+                a {
+                    width: 100%;
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                    border: 1px solid blue;
+
+
+                    img {
+                        width: 100%;
+                        border: 1px solid darkgoldenrod;
+                    }
+
+
+                }
+            }
+        }
+    }
+
+}
